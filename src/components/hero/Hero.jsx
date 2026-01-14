@@ -52,11 +52,11 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative bg-gradient-to-br from-blue-900 to-blue-800 text-white overflow-hidden min-h-screen flex items-center pt-16">
+    <div className="relative bg-gradient-to-br from-black-900 to-black-800 text-white overflow-hidden min-h-screen flex items-center pt-16">
       {/* Image Slider Background */}
       <div className="absolute inset-0 z-0">
         {/* Dark overlay for better text visibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/85 via-blue-900/80 to-blue-900/85 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black-900/85 via-black-900/80 to-black-900/85 z-10"></div>
         
         {/* Slider Images */}
         {sliderImages.map((image, index) => (
