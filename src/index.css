@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* body {
+    font-family: 'Inter', system-ui, sans-serif;
+  } */
+}
+h1,h2{
+  font-family: "Saira", sans-serif;
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-6 py-3 rounded-lg font-semibold transition-all;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100;
+  }
+
+  .section-padding {
+    @apply py-20 px-4;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Custom utility styles */
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, #059669 0%, #0284C7 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #059669 0%, #0284C7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* colors.css or add to your existing CSS */
+:root {
+  /* Primary Colors */
+  --color-navy: #0A2342;
+  --color-navy-light: #1E3A5F;
+  
+  /* Secondary Colors */
+  --color-orange: #CC5500;
+  --color-orange-dark: #B3541E;
+  
+  /* Neutral & Backgrounds */
+  --color-gray-dark: #4B5563;
+  --color-gray: #6B7280;
+  --color-gray-light: #F3F4F6;
+  --color-off-white: #F9FAFB;
+  
+  /* Success/CTA */
+  --color-forest: #047857;
+  --color-forest-dark: #065F46;
+  
+  /* Text Colors */
+  --color-text-primary: var(--color-navy);
+  --color-text-secondary: var(--color-gray-dark);
+  --color-text-light: #ffffff;
+}
+
+/* Tailwind-like utility classes for our colors */
+.bg-navy { background-color: var(--color-navy); }
+.bg-navy-light { background-color: var(--color-navy-light); }
+.text-navy { color: var(--color-navy); }
+
+.bg-orange { background-color: var(--color-orange); }
+.bg-orange-dark { background-color: var(--color-orange-dark); }
+.text-orange { color: var(--color-orange); }
+
+.bg-gray-dark { background-color: var(--color-gray-dark); }
+.bg-gray { background-color: var(--color-gray); }
+.bg-gray-light { background-color: var(--color-gray-light); }
+.text-gray-dark { color: var(--color-gray-dark); }
+.text-gray-light { color: var(--color-gray-light); }
+
+.bg-forest { background-color: var(--color-forest); }
+.bg-forest-dark { background-color: var(--color-forest-dark); }
+
+.bg-orange-50 { background-color: rgba(204, 85, 0, 0.1); }
+.bg-blue-50 { background-color: rgba(59, 130, 246, 0.1); }
+
+/* Border colors */
+.border-navy-light { border-color: var(--color-navy-light); }
+.border-gray-light { border-color: var(--color-gray-light); }
+.border-orange { border-color: var(--color-orange); }
